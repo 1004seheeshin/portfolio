@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <!--css-->
+    <link rel="stylesheet" href="../inc/css/common.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-ui.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-paginate.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-button.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-box.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-layer.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-tab.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-tooltip.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-table.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-fold.css">
+    <link rel="stylesheet" href="../inc/css/ec-base-prdInfo.css">
+    <link rel="stylesheet" href="../inc/css/layout.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap&subset=korean" rel="stylesheet">
+    <!--js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../layout/basic/js/common.js"></script>
+    
+
+</head>
+<body id="layout">
+<div id="wrap">
+<!--@import(../layout/basic/sidebar.html)-->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#sidebar").load("../layout/basic/sidebar.html"); 
+
+    });
+</script>
+
+<div class="nav-menu" id="header"> </div>
+
+<hr class="layout">
+<div id="container">
+	<header id="header" class="header">
+		<div class="top_section">
+			<div class="top_logo"><a href="/">SHIN SEHEE</a></div>
+			<div class="right_area">
+				<div class="top_cate fold"><img src="../img/icon_allcate.png" /></div>
+				<!--<div class="search"><button type="button"></button></div>-->
+			</div><!-- //right_area -->
+		</div><!-- //top_section -->
+
+	</header><!-- //header -->
+	<hr class="layout">
+	<div id="contents">
+		<!--@contents-->
+	</div><!-- //contents -->
+	<hr class="layout">
+    <script type="text/javascript">
+        $(document).ready(function () {
+    
+            $("#footers").load("../inc/footer.html");  
+    
+        });
+    </script>
+	<!--@import(../layout/basic/footer.html)-->
+</div><!-- //container -->
+</div><!-- //wrap -->
+<!--@css()-->
+<link rel="stylesheet" href="../inc/css/customizing.css">
+</body>
+</html>
