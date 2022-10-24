@@ -1,36 +1,9 @@
-<!--@layout(/layout/basic/layout.html)-->
-<!--@js(/layout/basic/js/countdown_start.js)-->
-<!--@js(/layout/basic/js/jquery.plugin.min.js)-->
-<!--@js(/layout/basic/js/jquery.countdown.min.js)-->
-<div module="Popup_MultiPopup">
-	<!--
-		$banner_popup_no =
-		※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
-	-->
-	{$popup}
-</div>
-<div module="Popup_MultiBanner">
-	<!--
-		$banner_popup_no =
-		※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
-	-->
-	{$banner}
-</div>
+<!--공통레이아웃-->
 
-<div class="mainBanner" module="Mobile_Banner">
-    <!--
-        $swipe = yes
-        $custom = no
-    -->
-    <ul>
-        <li><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
-        <li class="afterNone"><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
-    </ul>
-</div> 
-
+<? include_once $_SERVER["DOCUMENT_ROOT"]."/inc/layout.html" ?>
 <div class="wave"> Hola amigos ! <br>I'm ready for my close-up</div>
 <div>
-    <a href="/shopinfo/company.html"><p style="padding-top:130px;"><img src="/web/data/sehee_main.jpeg"></p></a><!--/web/data/main/main/h11.jpg-->
+    <a href="./layout/shopinfo/company.html"><p style="padding-top:130px;"><img src="http://sehya1004.cafe24.com/web/data/sehee_main.jpeg"></p></a><!--/web/data/main/main/h11.jpg-->
 <!--디자인추가중-->
 
 <!--<div>
@@ -41,14 +14,8 @@
 </div>-->
 
 
-<br>
 
-<div module="product_listmore_1" class="ec-base-paginate typeMoreview">
-    <a href="#none" onclick="{$more_action}" class="btnMore">
-        제품 더보기 <span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>
-        <span class="icoMore"></span>
-    </a>
-</div>
+
 
 
 
